@@ -16,11 +16,26 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="PVD-iI-8L6">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PVD-iI-8L6" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="S8L-PB-yKQ"/>
+                            <constraint firstItem="PVD-iI-8L6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WW4-pN-X4K"/>
+                            <constraint firstItem="PVD-iI-8L6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="puf-jF-MY2"/>
+                            <constraint firstItem="PVD-iI-8L6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zJC-VC-FOq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Map" destination="PVD-iI-8L6" id="MH8-h1-D5i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="243"/>
         </scene>
     </scenes>
 </document>
